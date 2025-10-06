@@ -1,4 +1,5 @@
 import { FadeIn, SlideUp } from "@/components/ui/framer-motion";
+import ResumeDownload from "@/components/ui/resume-download";
 
 export default function Hero() {
   return (
@@ -58,6 +59,7 @@ export default function Hero() {
             >
               View Projects
             </a>
+            <ResumeDownload />
             <a 
               href="#contact" 
               className="px-8 py-3 glass rounded-lg font-semibold hover:bg-muted transition-all hover:scale-105"

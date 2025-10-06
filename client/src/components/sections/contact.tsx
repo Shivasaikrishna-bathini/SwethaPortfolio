@@ -1,5 +1,6 @@
 import { FadeIn, Stagger } from "@/components/ui/framer-motion";
 import { fadeInVariants, staggerVariants } from "@/components/ui/framer-motion";
+import ContactForm from "@/components/ui/contact-form";
 
 const contactMethods = [
   {
@@ -157,6 +158,18 @@ export default function Contact() {
                   ))}
                 </div>
               </Stagger>
+            </div>
+          </FadeIn>
+
+          <FadeIn 
+            variants={fadeInVariants} 
+            initial="hidden" 
+            whileInView="visible" 
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+          >
+            <div className="mt-12">
+              <ContactForm />
             </div>
           </FadeIn>
         </div>
