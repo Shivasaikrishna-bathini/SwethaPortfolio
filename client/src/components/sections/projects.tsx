@@ -1,0 +1,112 @@
+import { FadeIn, Stagger } from "@/components/ui/framer-motion";
+import { fadeInVariants, staggerVariants } from "@/components/ui/framer-motion";
+
+const projects = [
+  {
+    id: 1,
+    title: "Cognitive HOI Reasoning",
+    period: "Apr 2023 – Mar 2024",
+    description: "Research project investigating human-object interaction models on Bongard-HOI and HAKE datasets, bridging cognitive paradigms in computer vision.",
+    tags: ["Computer Vision", "DVRL", "Deep Learning"],
+    icon: "🧠",
+    metric: "80% Accuracy",
+    color: "primary"
+  },
+  {
+    id: 2,
+    title: "Personal Attorney – Legal RAG",
+    period: "Apr 2024 – Nov 2024",
+    description: "RAG system providing state-specific DMV/legal information. Implemented with ChromaDB, LangChain, FastAPI, and DeepSeek 8B with LoRA fine-tuning.",
+    tags: ["RAG", "LangChain", "FastAPI", "LoRA"],
+    icon: "⚖️",
+    metric: "ChromaDB",
+    color: "secondary"
+  },
+  {
+    id: 3,
+    title: "SmartMed AI – Pill Detection",
+    period: "Jan 2025 – Aug 2025",
+    description: "Computer vision pipeline using YOLO (v5–v12), multi-scale detection, and attention modules for pharmaceutical applications with frame-to-frame tracking.",
+    tags: ["YOLO", "PyTorch", "OpenCV", "AWS"],
+    icon: "💊",
+    metric: "Computer Vision",
+    color: "accent"
+  },
+  {
+    id: 4,
+    title: "Time-Series Forecasting",
+    period: "Sep 2025 – Present",
+    description: "Stock market analysis using advanced forecasting models. Comparing traditional ARIMA/SARIMA with Meta's Prophet and XGBoost ensembles for volatile financial data.",
+    tags: ["ARIMA", "Prophet", "XGBoost"],
+    icon: "📈",
+    metric: "Ongoing",
+    color: "primary"
+  }
+];
+
+export default function Projects() {
+  return (
+    <section id="projects" className="min-h-screen py-20 px-6 fade-in-section">
+      <div className="max-w-7xl mx-auto">
+        <FadeIn variants={fadeInVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+            Featured <span className="gradient-text">Projects</span>
+          </h2>
+        </FadeIn>
+
+        <Stagger variants={staggerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <div className="grid md:grid-cols-2 gap-8">
+            {projects.map((project) => (
+              <FadeIn 
+                key={project.id}
+                variants={fadeInVariants}
+                className={`project-card glass p-8 rounded-xl cursor-pointer group hover:border-${project.color}/50`}
+                data-testid={`project-card-${project.id}`}
+                whileHover={{ scale: 1.02, y: -8 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className={`w-14 h-14 bg-${project.color}/20 rounded-lg flex items-center justify-center group-hover:bg-${project.color}/30 transition-colors text-2xl`}>
+                    {project.icon}
+                  </div>
+                  <span className="text-sm font-mono text-muted-foreground">{project.period}</span>
+                </div>
+                
+                <h3 className={`text-2xl font-bold mb-3 group-hover:text-${project.color} transition-colors`}>
+                  {project.title}
+                </h3>
+                
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, index) => (
+                    <span 
+                      key={index}
+                      className={`px-3 py-1 bg-${project.color}/10 text-${project.color} text-sm rounded-full`}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                
+                <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <svg className={`w-4 h-4 text-${project.color}`} fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm">{project.metric}</span>
+                  </div>
+                  <svg className={`w-5 h-5 ml-auto text-${project.color} group-hover:translate-x-2 transition-transform`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </Stagger>
+      </div>
+    </section>
+  );
+}
