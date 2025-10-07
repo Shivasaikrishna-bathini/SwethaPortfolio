@@ -1,5 +1,6 @@
 import { FadeIn, SlideUp } from "@/components/ui/framer-motion";
 import { FileText } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Hero() {
 
@@ -60,14 +61,14 @@ export default function Hero() {
             >
               View Projects
             </a>
-            <button
-              onClick={() => window.open('/attached_assets/Swetha_AI_Engineer_1759853665954.pdf', '_blank')}
+            <Link
+              href="/resume"
               className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all hover:scale-105 flex items-center gap-2"
               data-testid="button-view-resume"
             >
               <FileText className="w-4 h-4" />
               View Resume
-            </button>
+            </Link>
             <a 
               href="#contact" 
               className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all hover:scale-105"
