@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { FadeIn, SlideUp } from "@/components/ui/framer-motion";
-import ResumeDownload from "@/components/ui/resume-download";
+import { FileText } from "lucide-react";
+import ResumeModal from "@/components/ui/resume-modal";
 
 export default function Hero() {
+  const [showResumeModal, setShowResumeModal] = useState(false);
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative px-6">
       <div className="max-w-7xl mx-auto text-center">
@@ -59,7 +63,14 @@ export default function Hero() {
             >
               View Projects
             </a>
-            <ResumeDownload />
+            <button
+              onClick={() => setShowResumeModal(true)}
+              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all hover:scale-105 flex items-center gap-2"
+              data-testid="button-view-resume"
+            >
+              <FileText className="w-4 h-4" />
+              View Resume
+            </button>
             <a 
               href="#contact" 
               className="px-8 py-3 glass rounded-lg font-semibold hover:bg-muted transition-all hover:scale-105"
@@ -122,6 +133,8 @@ export default function Hero() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>
+
+      <ResumeModal isOpen={showResumeModal} onClose={() => setShowResumeModal(false)} />
     </section>
   );
 }
