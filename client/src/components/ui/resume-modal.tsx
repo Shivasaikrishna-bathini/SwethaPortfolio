@@ -21,7 +21,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         
         <div className="flex-1 h-full mt-4">
           <iframe
-            src="/attached_assets/Swetha_AI_Engineer_1759779780112.pdf"
+            src="/attached_assets/Swetha_AI_Engineer_1759853665954.pdf"
             className="w-full h-full rounded-lg border border-border"
             title="Resume PDF"
             data-testid="iframe-resume"

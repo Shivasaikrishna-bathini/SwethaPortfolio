@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export default function ResumeDownload() {
   const handleOpenResume = () => {
     // TODO: Update the resume PDF path here when you change your resume
-    window.open('/attached_assets/Swetha_AI_Engineer_1759779780112.pdf', '_blank');
+    window.open('/attached_assets/Swetha_AI_Engineer_1759853665954.pdf', '_blank');
   };
 
   return (

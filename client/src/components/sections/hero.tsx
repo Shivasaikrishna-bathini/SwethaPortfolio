@@ -73,7 +73,7 @@ export default function Hero() {
             </button>
             <a 
               href="#contact" 
-              className="px-8 py-3 glass rounded-lg font-semibold hover:bg-muted transition-all hover:scale-105"
+              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all hover:scale-105"
               data-testid="button-get-in-touch"
               onClick={(e) => {
                 e.preventDefault();
