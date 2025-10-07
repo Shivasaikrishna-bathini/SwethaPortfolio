@@ -1,6 +1,5 @@
 import { FadeIn, Stagger } from "@/components/ui/framer-motion";
 import { fadeInVariants, staggerVariants } from "@/components/ui/framer-motion";
-import SkillVisualization from "@/components/ui/skill-visualization";
 
 const skillCategories = [
   {
@@ -106,20 +105,6 @@ export default function Skills() {
             </Stagger>
           ))}
         </div>
-
-        <FadeIn variants={fadeInVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <div className="glass p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-8 text-center">Core Proficiencies</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <SkillVisualization skill="Python & Machine Learning" level={95} color="primary" delay={0.1} />
-              <SkillVisualization skill="Deep Learning & LLMs" level={90} color="primary" delay={0.2} />
-              <SkillVisualization skill="RAG & Vector Databases" level={88} color="secondary" delay={0.3} />
-              <SkillVisualization skill="Cloud Platforms (AWS/GCP/Azure)" level={85} color="secondary" delay={0.4} />
-              <SkillVisualization skill="Computer Vision" level={87} color="accent" delay={0.5} />
-              <SkillVisualization skill="Full-Stack Development" level={82} color="accent" delay={0.6} />
-            </div>
-          </div>
-        </FadeIn>
       </div>
     </section>
   );
