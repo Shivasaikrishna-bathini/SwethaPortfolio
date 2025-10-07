@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ThemeToggle from "@/components/ui/theme-toggle";
 
 const navItems = [
   { href: "#home", label: "Home" },
@@ -46,7 +47,7 @@ export default function Navbar() {
             SS
           </a>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -61,17 +62,21 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
+            <ThemeToggle />
           </div>
 
-          <button 
-            className="md:hidden text-foreground"
-            data-testid="nav-mobile-toggle"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button 
+              className="text-foreground"
+              data-testid="nav-mobile-toggle"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
