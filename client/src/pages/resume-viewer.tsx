@@ -20,7 +20,7 @@ export default function ResumeViewer() {
           
           <div className="flex items-center gap-3">
             <a
-              href="/attached_assets/Swetha_AI_Engineer_1759853665954.pdf"
+              href="/attached_assets/Swetha_ATS_1759862930875.pdf"
               download
               className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all hover:scale-105 flex items-center gap-2"
               data-testid="button-download-pdf"
@@ -43,13 +43,13 @@ export default function ResumeViewer() {
       <div className="max-w-6xl mx-auto p-6">
         <div className="bg-white rounded-lg shadow-2xl overflow-hidden" style={{ height: 'calc(100vh - 120px)' }}>
           <object
-            data="/attached_assets/Swetha_AI_Engineer_1759853665954.pdf"
+            data="/attached_assets/Swetha_ATS_1759862930875.pdf"
             type="application/pdf"
             className="w-full h-full"
             data-testid="pdf-viewer"
           >
             <iframe
-              src="/attached_assets/Swetha_AI_Engineer_1759853665954.pdf"
+              src="/attached_assets/Swetha_ATS_1759862930875.pdf"
               className="w-full h-full"
               title="Resume PDF"
               data-testid="pdf-iframe-fallback"
