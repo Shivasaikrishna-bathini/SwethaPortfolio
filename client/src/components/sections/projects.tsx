@@ -3,6 +3,7 @@ import { FadeIn, Stagger } from "@/components/ui/framer-motion";
 import { fadeInVariants, staggerVariants } from "@/components/ui/framer-motion";
 import ProjectModal from "@/components/ui/project-modal";
 
+// TODO: Add your project links below. Set link to null if you don't have a link for that project.
 const projects = [
   {
     id: 1,
@@ -13,6 +14,7 @@ const projects = [
     icon: "🧠",
     metric: "80% Accuracy",
     color: "primary",
+    link: null, // TODO: Add GitHub repo or live demo link here
     details: [
       "Investigated human-object interaction models on Bongard-HOI and HAKE datasets",
       "Identified reasoning gaps between synthetic and real-world image understanding",
@@ -34,6 +36,7 @@ const projects = [
     icon: "⚖️",
     metric: "ChromaDB",
     color: "secondary",
+    link: null, // TODO: Add GitHub repo or live demo link here
     details: [
       "Built a Retrieval-Augmented Generation (RAG) system for state-specific DMV and legal information",
       "Implemented scalable vector database architecture with ChromaDB",
@@ -55,6 +58,7 @@ const projects = [
     icon: "💊",
     metric: "Computer Vision",
     color: "accent",
+    link: null, // TODO: Add GitHub repo or live demo link here
     details: [
       "Developed comprehensive computer vision pipeline using YOLO versions 5 through 12",
       "Implemented multi-scale detection and attention modules for accurate pill identification",
@@ -76,6 +80,7 @@ const projects = [
     icon: "📈",
     metric: "Ongoing",
     color: "primary",
+    link: null, // TODO: Add GitHub repo or live demo link here
     details: [
       "Designed forecasting models for volatile financial time-series data",
       "Compared traditional statistical methods (ARIMA/SARIMA) with modern ML approaches",
