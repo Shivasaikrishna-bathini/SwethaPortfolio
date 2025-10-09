@@ -4,65 +4,65 @@
 @tailwind utilities;
 
 :root {
-  /* Light Mode - Clean and Fresh */
-  --background: hsl(210, 20%, 98%);
-  --foreground: hsl(205, 72%, 11%);
+  /* Light Mode - Cosmic Galaxy */
+  --background: hsl(250, 30%, 95%);
+  --foreground: hsl(270, 60%, 15%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(205, 72%, 11%);
+  --card-foreground: hsl(270, 60%, 15%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(205, 72%, 11%);
-  --primary: hsl(10, 100%, 58%);
+  --popover-foreground: hsl(270, 60%, 15%);
+  --primary: hsl(280, 85%, 60%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(206, 26%, 27%);
+  --secondary: hsl(260, 70%, 55%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --accent: hsl(215, 26%, 23%);
+  --accent: hsl(320, 80%, 60%);
   --accent-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(210, 20%, 95%);
-  --muted-foreground: hsl(206, 26%, 40%);
+  --muted: hsl(250, 30%, 90%);
+  --muted-foreground: hsl(270, 40%, 40%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(210, 20%, 90%);
-  --input: hsl(210, 20%, 95%);
-  --ring: hsl(10, 100%, 58%);
-  --chart-1: hsl(10, 100%, 58%);
-  --chart-2: hsl(206, 26%, 27%);
-  --chart-3: hsl(215, 26%, 23%);
-  --chart-4: hsl(180, 60%, 45%);
+  --border: hsl(250, 30%, 85%);
+  --input: hsl(250, 30%, 90%);
+  --ring: hsl(280, 85%, 60%);
+  --chart-1: hsl(280, 85%, 60%);
+  --chart-2: hsl(260, 70%, 55%);
+  --chart-3: hsl(320, 80%, 60%);
+  --chart-4: hsl(200, 70%, 55%);
   --chart-5: hsl(340, 75%, 55%);
   --sidebar: hsl(0, 0%, 100%);
-  --sidebar-foreground: hsl(205, 72%, 11%);
-  --sidebar-primary: hsl(10, 100%, 58%);
+  --sidebar-foreground: hsl(270, 60%, 15%);
+  --sidebar-primary: hsl(280, 85%, 60%);
   --sidebar-primary-foreground: hsl(0, 0%, 100%);
-  --sidebar-accent: hsl(210, 20%, 95%);
-  --sidebar-accent-foreground: hsl(10, 100%, 58%);
-  --sidebar-border: hsl(210, 20%, 90%);
-  --sidebar-ring: hsl(10, 100%, 58%);
+  --sidebar-accent: hsl(250, 30%, 90%);
+  --sidebar-accent-foreground: hsl(280, 85%, 60%);
+  --sidebar-border: hsl(250, 30%, 85%);
+  --sidebar-ring: hsl(280, 85%, 60%);
   --font-sans: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --radius: 0.75rem;
 }
 
 .dark {
-  /* Dark Mode - Deep Blues with Orange Accent */
-  --background: hsl(205, 72%, 11%);
-  --foreground: hsl(210, 20%, 95%);
-  --card: hsl(215, 26%, 23%);
-  --card-foreground: hsl(210, 20%, 95%);
-  --popover: hsl(215, 26%, 23%);
-  --popover-foreground: hsl(210, 20%, 95%);
-  --primary: hsl(10, 100%, 58%);
+  /* Dark Mode - Deep Space Galaxy */
+  --background: hsl(270, 40%, 8%);
+  --foreground: hsl(280, 30%, 95%);
+  --card: hsl(270, 30%, 15%);
+  --card-foreground: hsl(280, 30%, 95%);
+  --popover: hsl(270, 30%, 15%);
+  --popover-foreground: hsl(280, 30%, 95%);
+  --primary: hsl(280, 85%, 60%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(206, 26%, 27%);
-  --secondary-foreground: hsl(210, 20%, 95%);
-  --accent: hsl(10, 100%, 58%);
+  --secondary: hsl(260, 70%, 55%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(320, 80%, 60%);
   --accent-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(206, 26%, 20%);
-  --muted-foreground: hsl(210, 20%, 70%);
+  --muted: hsl(270, 30%, 20%);
+  --muted-foreground: hsl(280, 20%, 70%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(206, 26%, 30%);
-  --input: hsl(206, 26%, 20%);
-  --ring: hsl(10, 100%, 58%);
+  --border: hsl(270, 30%, 25%);
+  --input: hsl(270, 30%, 18%);
+  --ring: hsl(280, 85%, 60%);
 }
 
 @layer base {
@@ -98,7 +98,7 @@
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, hsl(10, 100%, 58%), hsl(206, 26%, 27%), hsl(215, 26%, 23%));
+    background: linear-gradient(135deg, hsl(280, 85%, 60%), hsl(320, 80%, 60%), hsl(260, 70%, 55%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -144,10 +144,10 @@
 
 @keyframes glow {
   0% { 
-    box-shadow: 0 0 20px rgba(255, 76, 41, 0.3); 
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3); 
   }
   100% { 
-    box-shadow: 0 0 40px rgba(255, 76, 41, 0.6); 
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.6); 
   }
 }
 
@@ -175,7 +175,7 @@
 .cursor-dot {
   width: 8px;
   height: 8px;
-  background: hsl(10, 100%, 58%);
+  background: hsl(280, 85%, 60%);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -186,7 +186,7 @@
 .cursor-outline {
   width: 32px;
   height: 32px;
-  border: 2px solid hsl(10, 100%, 58%, 0.5);
+  border: 2px solid hsl(280, 85%, 60%, 0.5);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -207,7 +207,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, hsl(10, 100%, 58%, 0.1), hsl(206, 26%, 27%, 0.1));
+  background: linear-gradient(135deg, hsl(280, 85%, 60%, 0.1), hsl(320, 80%, 60%, 0.1));
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -226,7 +226,7 @@
 
 .skill-badge:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 20px hsl(10, 100%, 58%, 0.4);
+  box-shadow: 0 0 20px hsl(280, 85%, 60%, 0.4);
 }
 
 .timeline-connector {
@@ -235,7 +235,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, hsl(10, 100%, 58%), hsl(206, 26%, 27%));
+  background: linear-gradient(180deg, hsl(280, 85%, 60%), hsl(320, 80%, 60%));
 }
 
 .fade-in-section {
