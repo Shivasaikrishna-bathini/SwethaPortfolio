@@ -3,18 +3,19 @@ import { FadeIn, Stagger } from "@/components/ui/framer-motion";
 import { fadeInVariants, staggerVariants } from "@/components/ui/framer-motion";
 import ProjectModal from "@/components/ui/project-modal";
 
-// TODO: Add your project links below. Set link to null if you don't have a link for that project.
+// TODO: UPDATE YOUR PROJECTS - Edit title, description, tags, and other project details below
+// To add a project link: Change "link: null" to "link: 'your-github-or-demo-url'"
 const projects = [
   {
     id: 1,
-    title: "Cognitive HOI Reasoning",
+    title: "Cognitive HOI Reasoning", // TODO: Edit project title here
     period: "Apr 2023 – Mar 2024",
-    description: "Research project investigating human-object interaction models on Bongard-HOI and HAKE datasets, bridging cognitive paradigms in computer vision.",
-    tags: ["Computer Vision", "DVRL", "Deep Learning"],
+    description: "Research project investigating human-object interaction models on Bongard-HOI and HAKE datasets, bridging cognitive paradigms in computer vision.", // TODO: Edit project description here
+    tags: ["Computer Vision", "DVRL", "Deep Learning"], // TODO: Edit project tags here
     icon: "🧠",
     metric: "80% Accuracy",
     color: "primary",
-    link: null, // TODO: Add GitHub repo or live demo link here
+    link: null, // TODO: ADD PROJECT LINK - Replace null with your GitHub repo or live demo URL (e.g., "https://github.com/username/repo")
     details: [
       "Investigated human-object interaction models on Bongard-HOI and HAKE datasets",
       "Identified reasoning gaps between synthetic and real-world image understanding",

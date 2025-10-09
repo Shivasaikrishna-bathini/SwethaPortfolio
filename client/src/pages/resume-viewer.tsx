@@ -19,6 +19,7 @@ export default function ResumeViewer() {
           </div>
           
           <div className="flex items-center gap-3">
+            {/* TODO: UPDATE YOUR RESUME - Change the PDF filename below when you upload a new resume */}
             <a
               href="/attached_assets/Swetha_ATS_1759862930875.pdf"
               download
@@ -42,6 +43,7 @@ export default function ResumeViewer() {
 
       <div className="max-w-6xl mx-auto p-6">
         <div className="bg-white rounded-lg shadow-2xl overflow-hidden" style={{ height: 'calc(100vh - 120px)' }}>
+          {/* TODO: UPDATE YOUR RESUME - Change both PDF paths below (data and src) when you upload a new resume */}
           <object
             data="/attached_assets/Swetha_ATS_1759862930875.pdf"
             type="application/pdf"
