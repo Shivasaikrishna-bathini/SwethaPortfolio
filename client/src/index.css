@@ -4,65 +4,65 @@
 @tailwind utilities;
 
 :root {
-  /* Light Mode - Cosmic Galaxy */
-  --background: hsl(250, 30%, 95%);
-  --foreground: hsl(270, 60%, 15%);
+  /* Light Mode - Milky Way Galaxy */
+  --background: hsl(210, 20%, 95%);
+  --foreground: hsl(220, 40%, 15%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(270, 60%, 15%);
+  --card-foreground: hsl(220, 40%, 15%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(270, 60%, 15%);
-  --primary: hsl(280, 85%, 60%);
+  --popover-foreground: hsl(220, 40%, 15%);
+  --primary: hsl(40, 90%, 55%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(260, 70%, 55%);
+  --secondary: hsl(200, 80%, 50%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --accent: hsl(320, 80%, 60%);
+  --accent: hsl(35, 85%, 60%);
   --accent-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(250, 30%, 90%);
-  --muted-foreground: hsl(270, 40%, 40%);
+  --muted: hsl(210, 20%, 90%);
+  --muted-foreground: hsl(220, 30%, 40%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(250, 30%, 85%);
-  --input: hsl(250, 30%, 90%);
-  --ring: hsl(280, 85%, 60%);
-  --chart-1: hsl(280, 85%, 60%);
-  --chart-2: hsl(260, 70%, 55%);
-  --chart-3: hsl(320, 80%, 60%);
-  --chart-4: hsl(200, 70%, 55%);
-  --chart-5: hsl(340, 75%, 55%);
+  --border: hsl(210, 20%, 85%);
+  --input: hsl(210, 20%, 90%);
+  --ring: hsl(40, 90%, 55%);
+  --chart-1: hsl(40, 90%, 55%);
+  --chart-2: hsl(200, 80%, 50%);
+  --chart-3: hsl(35, 85%, 60%);
+  --chart-4: hsl(190, 75%, 55%);
+  --chart-5: hsl(45, 80%, 60%);
   --sidebar: hsl(0, 0%, 100%);
-  --sidebar-foreground: hsl(270, 60%, 15%);
-  --sidebar-primary: hsl(280, 85%, 60%);
+  --sidebar-foreground: hsl(220, 40%, 15%);
+  --sidebar-primary: hsl(40, 90%, 55%);
   --sidebar-primary-foreground: hsl(0, 0%, 100%);
-  --sidebar-accent: hsl(250, 30%, 90%);
-  --sidebar-accent-foreground: hsl(280, 85%, 60%);
-  --sidebar-border: hsl(250, 30%, 85%);
-  --sidebar-ring: hsl(280, 85%, 60%);
+  --sidebar-accent: hsl(210, 20%, 90%);
+  --sidebar-accent-foreground: hsl(40, 90%, 55%);
+  --sidebar-border: hsl(210, 20%, 85%);
+  --sidebar-ring: hsl(40, 90%, 55%);
   --font-sans: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --radius: 0.75rem;
 }
 
 .dark {
-  /* Dark Mode - Deep Space Galaxy */
-  --background: hsl(270, 40%, 8%);
-  --foreground: hsl(280, 30%, 95%);
-  --card: hsl(270, 30%, 15%);
-  --card-foreground: hsl(280, 30%, 95%);
-  --popover: hsl(270, 30%, 15%);
-  --popover-foreground: hsl(280, 30%, 95%);
-  --primary: hsl(280, 85%, 60%);
-  --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(260, 70%, 55%);
+  /* Dark Mode - Milky Way Galaxy */
+  --background: hsl(0, 0%, 5%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(220, 20%, 10%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: hsl(220, 20%, 10%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: hsl(40, 90%, 55%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(200, 80%, 50%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --accent: hsl(320, 80%, 60%);
-  --accent-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(270, 30%, 20%);
-  --muted-foreground: hsl(280, 20%, 70%);
+  --accent: hsl(35, 85%, 60%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --muted: hsl(220, 20%, 15%);
+  --muted-foreground: hsl(0, 0%, 70%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(270, 30%, 25%);
-  --input: hsl(270, 30%, 18%);
-  --ring: hsl(280, 85%, 60%);
+  --border: hsl(220, 20%, 20%);
+  --input: hsl(220, 20%, 12%);
+  --ring: hsl(40, 90%, 55%);
 }
 
 @layer base {
@@ -98,7 +98,7 @@
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, hsl(280, 85%, 60%), hsl(320, 80%, 60%), hsl(260, 70%, 55%));
+    background: linear-gradient(135deg, hsl(40, 90%, 55%), hsl(200, 80%, 50%), hsl(35, 85%, 60%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -144,10 +144,10 @@
 
 @keyframes glow {
   0% { 
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3); 
+    box-shadow: 0 0 20px rgba(255, 191, 71, 0.3); 
   }
   100% { 
-    box-shadow: 0 0 40px rgba(168, 85, 247, 0.6); 
+    box-shadow: 0 0 40px rgba(255, 191, 71, 0.6); 
   }
 }
 
@@ -175,7 +175,7 @@
 .cursor-dot {
   width: 8px;
   height: 8px;
-  background: hsl(280, 85%, 60%);
+  background: hsl(40, 90%, 55%);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -186,7 +186,7 @@
 .cursor-outline {
   width: 32px;
   height: 32px;
-  border: 2px solid hsl(280, 85%, 60%, 0.5);
+  border: 2px solid hsl(40, 90%, 55%, 0.5);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -207,7 +207,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, hsl(280, 85%, 60%, 0.1), hsl(320, 80%, 60%, 0.1));
+  background: linear-gradient(135deg, hsl(40, 90%, 55%, 0.1), hsl(200, 80%, 50%, 0.1));
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -226,7 +226,7 @@
 
 .skill-badge:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 20px hsl(280, 85%, 60%, 0.4);
+  box-shadow: 0 0 20px hsl(40, 90%, 55%, 0.4);
 }
 
 .timeline-connector {
@@ -235,7 +235,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, hsl(280, 85%, 60%), hsl(320, 80%, 60%));
+  background: linear-gradient(180deg, hsl(40, 90%, 55%), hsl(200, 80%, 50%));
 }
 
 .fade-in-section {
