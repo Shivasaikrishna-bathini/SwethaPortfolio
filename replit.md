@@ -42,7 +42,9 @@ Preferred communication style: Simple, everyday language.
 - **Animated Gear Background**: Animated GIF background with mechanical gear mechanism
   - Asset: "Idea Maker Sticker by Johnson County Library" animated GIF
   - Full viewport coverage with background-size: cover
-  - Subtle blending: 8% opacity with screen blend mode
+  - Theme-adaptive blending:
+    - Dark mode: 8% opacity with screen blend mode (subtle glow effect)
+    - Light mode: 12% opacity with multiply blend mode (visible darkening)
   - Fixed positioning, z-index 0 (behind content)
   - Non-interactive (pointer-events: none)
 
