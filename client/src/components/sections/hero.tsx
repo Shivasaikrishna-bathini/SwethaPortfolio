@@ -5,7 +5,7 @@ import { Link } from "wouter";
 export default function Hero() {
 
   return (
-    <section id="home" className="min-h-screen golden-section flex items-center justify-center relative px-6">
+    <section id="home" className="min-h-screen flex items-center justify-center relative px-6" style={{ paddingTop: 'var(--space-phi-4)', paddingBottom: 'var(--space-phi-4)' }}>
       <div className="max-w-7xl mx-auto text-center">
         <FadeIn
           initial={{ opacity: 0, y: 20 }}

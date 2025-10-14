@@ -48,7 +48,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="min-h-screen golden-section px-6 fade-in-section">
+    <section id="experience" className="min-h-screen px-6 fade-in-section" style={{ paddingTop: 'var(--space-phi-4)', paddingBottom: 'var(--space-phi-4)' }}>
       <div className="max-w-7xl mx-auto">
         <FadeIn variants={fadeInVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <h2 className="text-4xl md:text-5xl font-bold golden-mb text-center">
