@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
-import { X } from "lucide-react";
+import { X, Github, ExternalLink } from "lucide-react";
 
 interface ProjectModalProps {
   project: {
@@ -15,6 +15,9 @@ interface ProjectModalProps {
     details?: string[];
     techStack?: string[];
     outcomes?: string[];
+    // TODO: Uncomment these when you add links to your projects
+    // githubLink?: string;
+    // websiteLink?: string;
   };
   isOpen: boolean;
   onClose: () => void;
@@ -37,6 +40,39 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
             </div>
           </div>
         </DialogHeader>
+
+        {/* TODO: UNCOMMENT THIS SECTION WHEN YOU ADD LINKS TO YOUR PROJECTS */}
+        {/* Project Links Section */}
+        {/* {(project.githubLink || project.websiteLink) && (
+          <div className="flex flex-wrap gap-3 mt-4">
+            {project.githubLink && (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg bg-${project.color}/10 hover:bg-${project.color}/20 text-${project.color} transition-colors group`}
+                data-testid={`link-github-${project.id}`}
+              >
+                <Github className="w-4 h-4" />
+                <span className="text-sm font-medium">View on GitHub</span>
+                <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+            )}
+            {project.websiteLink && (
+              <a
+                href={project.websiteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg bg-${project.color}/10 hover:bg-${project.color}/20 text-${project.color} transition-colors group`}
+                data-testid={`link-website-${project.id}`}
+              >
+                <ExternalLink className="w-4 h-4" />
+                <span className="text-sm font-medium">Live Demo</span>
+                <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+            )}
+          </div>
+        )} */}
 
         <div className="space-y-6 mt-6">
           <div>

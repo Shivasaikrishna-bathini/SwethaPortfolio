@@ -4,7 +4,7 @@ import { fadeInVariants, staggerVariants } from "@/components/ui/framer-motion";
 import ProjectModal from "@/components/ui/project-modal";
 
 // TODO: UPDATE YOUR PROJECTS - Edit title, description, tags, and other project details below
-// To add a project link: Change "link: null" to "link: 'your-github-or-demo-url'"
+// To add project links: Uncomment githubLink and websiteLink below and add your URLs
 const projects = [
   {
     id: 1,
@@ -15,7 +15,9 @@ const projects = [
     icon: "🧠",
     metric: "80% Accuracy",
     color: "primary",
-    link: null, // TODO: ADD PROJECT LINK - Replace null with your GitHub repo or live demo URL (e.g., "https://github.com/username/repo")
+    // TODO: UNCOMMENT AND ADD YOUR LINKS BELOW
+    // githubLink: "https://github.com/yourusername/your-repo", // Your GitHub repository URL
+    // websiteLink: "https://your-project-demo.com", // Your live demo or project website URL
     details: [
       "Investigated human-object interaction models on Bongard-HOI and HAKE datasets",
       "Identified reasoning gaps between synthetic and real-world image understanding",
@@ -37,7 +39,9 @@ const projects = [
     icon: "⚖️",
     metric: "ChromaDB",
     color: "secondary",
-    link: null, // TODO: Add GitHub repo or live demo link here
+    // TODO: UNCOMMENT AND ADD YOUR LINKS BELOW
+    // githubLink: "https://github.com/yourusername/your-repo", // Your GitHub repository URL
+    // websiteLink: "https://your-project-demo.com", // Your live demo or project website URL
     details: [
       "Built a Retrieval-Augmented Generation (RAG) system for state-specific DMV and legal information",
       "Implemented scalable vector database architecture with ChromaDB",
@@ -59,7 +63,9 @@ const projects = [
     icon: "💊",
     metric: "Computer Vision",
     color: "accent",
-    link: null, // TODO: Add GitHub repo or live demo link here
+    // TODO: UNCOMMENT AND ADD YOUR LINKS BELOW
+    // githubLink: "https://github.com/yourusername/your-repo", // Your GitHub repository URL
+    // websiteLink: "https://your-project-demo.com", // Your live demo or project website URL
     details: [
       "Developed comprehensive computer vision pipeline using YOLO versions 5 through 12",
       "Implemented multi-scale detection and attention modules for accurate pill identification",
@@ -81,7 +87,9 @@ const projects = [
     icon: "📈",
     metric: "Ongoing",
     color: "primary",
-    link: null, // TODO: Add GitHub repo or live demo link here
+    // TODO: UNCOMMENT AND ADD YOUR LINKS BELOW
+    // githubLink: "https://github.com/yourusername/your-repo", // Your GitHub repository URL
+    // websiteLink: "https://your-project-demo.com", // Your live demo or project website URL
     details: [
       "Designed forecasting models for volatile financial time-series data",
       "Compared traditional statistical methods (ARIMA/SARIMA) with modern ML approaches",
@@ -103,7 +111,9 @@ const projects = [
     icon: "📜",
     metric: "46% Faster",
     color: "secondary",
-    link: null, // TODO: Add GitHub repo or live demo link here
+    // TODO: UNCOMMENT AND ADD YOUR LINKS BELOW
+    // githubLink: "https://github.com/yourusername/your-repo", // Your GitHub repository URL
+    // websiteLink: "https://your-project-demo.com", // Your live demo or project website URL
     details: [
       "Built and trained a Transformer-based NLP model on ancient Sanskrit Vedic texts with custom 25,000-token vocabulary",
       "Optimized inference and training using NVIDIA GPUs, CUDA, cuDNN, and integrated TensorRT",
