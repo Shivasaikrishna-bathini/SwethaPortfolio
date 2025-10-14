@@ -35,10 +35,17 @@ Preferred communication style: Simple, everyday language.
 - Inter and JetBrains Mono fonts from Google Fonts
 - Consistent color palette with primary (orange #f97316), secondary (blue), and accent (cyan) colors
 - Component-based architecture with reusable UI primitives
-- **Golden Ratio Spacing System**: CSS variables based on φ (1.618) for harmonious layout
-  - `--space-phi-1` through `--space-phi-5` (1.618rem to 11.09rem)
-  - Utility classes: `.golden-section`, `.golden-gap`, `.golden-mb`
-- **Floating Cogs Background**: Minimal SVG pattern with slow rotating cogs (opacity 0.03)
+- **Golden Ratio Spacing System**: Applied via Tailwind arbitrary values based on φ (1.618)
+  - Section padding: `py-[6.854rem]` (~110px) for harmonious vertical rhythm
+  - Heading margins: `mb-[4.236rem]` (~68px) for h2, `mb-[2.618rem]` (~42px) for h1
+  - Grid gaps: `golden-gap` class using `var(--space-phi-2)` (2.618rem)
+- **Floating Cogs Background**: Detailed mechanical gear pattern with 5 distinct designs
+  - Gear 1: 12-tooth classic gear with dual circles
+  - Gear 2: 16-tooth gear with 4 internal circles
+  - Gear 3: 6-spoke gear with 10 teeth
+  - Gear 4: Cross-shaped gear with rectangular arms
+  - Gear 5: Small 8-tooth simple gear
+  - 14 gears total, slow rotation (60s-110s), orange strokes at 15% container opacity
 
 ## Backend Architecture
 
