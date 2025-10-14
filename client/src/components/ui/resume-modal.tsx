@@ -20,7 +20,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         <div className="flex-1 h-full p-6 bg-slate-900 dark:bg-slate-950">
           {/* TODO: UPDATE YOUR RESUME - Change the PDF filename below when you upload a new resume */}
           <iframe
-            src="/attached_assets/Swetha_ATS_1759862930875.pdf"
+            src="/attached_assets/Swetha_ATS_1760453545923.pdf"
             className="w-full h-full rounded-lg bg-white"
             title="Resume PDF"
             data-testid="iframe-resume"

@@ -3,15 +3,15 @@ import { fadeInVariants, staggerVariants } from "@/components/ui/framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen py-20 px-6 fade-in-section">
+    <section id="about" className="min-h-screen golden-section px-6 fade-in-section">
       <div className="max-w-7xl mx-auto">
         <FadeIn variants={fadeInVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold golden-mb text-center">
             About <span className="gradient-text">Me</span>
           </h2>
         </FadeIn>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid md:grid-cols-2 golden-gap items-center mb-16">
           <FadeIn 
             variants={fadeInVariants} 
             initial="hidden" 
@@ -78,7 +78,7 @@ export default function About() {
         </div>
 
         <Stagger variants={staggerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+          <div className="grid md:grid-cols-3 golden-gap text-center">
             <FadeIn variants={fadeInVariants} className="glass p-8 rounded-xl" data-testid="stat-experience">
               <div className="text-4xl font-bold gradient-text mb-2">3+</div>
               <div className="text-muted-foreground">Years Experience</div>

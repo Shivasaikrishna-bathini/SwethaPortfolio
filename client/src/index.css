@@ -40,6 +40,14 @@
   --font-sans: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --radius: 0.75rem;
+  
+  /* Golden Ratio Spacing System (φ ≈ 1.618) */
+  --golden-ratio: 1.618;
+  --space-phi-1: 1.618rem;
+  --space-phi-2: 2.618rem;
+  --space-phi-3: 4.236rem;
+  --space-phi-4: 6.854rem;
+  --space-phi-5: 11.09rem;
 }
 
 .dark {
@@ -122,6 +130,20 @@
   :root .nav-blur {
     background: rgba(255, 255, 255, 0.9);
   }
+
+  /* Golden Ratio Utilities */
+  .golden-section {
+    padding-top: var(--space-phi-4);
+    padding-bottom: var(--space-phi-4);
+  }
+
+  .golden-gap {
+    gap: var(--space-phi-2);
+  }
+
+  .golden-mb {
+    margin-bottom: var(--space-phi-3);
+  }
 }
 
 @keyframes reveal {
@@ -160,6 +182,24 @@
   }
 }
 
+@keyframes spin-slow {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+@keyframes spin-reverse {
+  0% { 
+    transform: rotate(360deg); 
+  }
+  100% { 
+    transform: rotate(0deg); 
+  }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -170,6 +210,14 @@
 
 .animate-bounce-custom {
   animation: bounce 2s infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 30s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 30s linear infinite;
 }
 
 .cursor-dot {

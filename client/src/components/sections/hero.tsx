@@ -5,7 +5,7 @@ import { Link } from "wouter";
 export default function Hero() {
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative px-6">
+    <section id="home" className="min-h-screen golden-section flex items-center justify-center relative px-6">
       <div className="max-w-7xl mx-auto text-center">
         <FadeIn
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold" style={{ marginBottom: 'var(--space-phi-2)' }}>
             <span className="text-reveal">Hi, I'm </span>
             <span className="gradient-text text-reveal" style={{animationDelay: '0.2s'}}>Sai Sri Swetha</span>
           </h1>

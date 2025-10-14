@@ -21,7 +21,7 @@ export default function ResumeViewer() {
           <div className="flex items-center gap-3">
             {/* TODO: UPDATE YOUR RESUME - Change the PDF filename below when you upload a new resume */}
             <a
-              href="/attached_assets/Swetha_ATS_1759862930875.pdf"
+              href="/attached_assets/Swetha_ATS_1760453545923.pdf"
               download
               className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all hover:scale-105 flex items-center gap-2"
               data-testid="button-download-pdf"
@@ -45,13 +45,13 @@ export default function ResumeViewer() {
         <div className="bg-white rounded-lg shadow-2xl overflow-hidden" style={{ height: 'calc(100vh - 120px)' }}>
           {/* TODO: UPDATE YOUR RESUME - Change both PDF paths below (data and src) when you upload a new resume */}
           <object
-            data="/attached_assets/Swetha_ATS_1759862930875.pdf"
+            data="/attached_assets/Swetha_ATS_1760453545923.pdf"
             type="application/pdf"
             className="w-full h-full"
             data-testid="pdf-viewer"
           >
             <iframe
-              src="/attached_assets/Swetha_ATS_1759862930875.pdf"
+              src="/attached_assets/Swetha_ATS_1760453545923.pdf"
               className="w-full h-full"
               title="Resume PDF"
               data-testid="pdf-iframe-fallback"

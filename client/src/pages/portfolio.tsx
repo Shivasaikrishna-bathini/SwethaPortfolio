@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import CustomCursor from "@/components/ui/custom-cursor";
 import AnimatedBackground from "@/components/ui/animated-background";
+import FloatingCogs from "@/components/ui/floating-cogs";
 import Navbar from "@/components/ui/navbar";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
@@ -37,6 +38,7 @@ export default function Portfolio() {
     <div className="min-h-screen">
       <CustomCursor />
       <AnimatedBackground />
+      <FloatingCogs />
       <Navbar />
       <Hero />
       <About />

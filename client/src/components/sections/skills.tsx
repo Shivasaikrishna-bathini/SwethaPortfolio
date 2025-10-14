@@ -64,15 +64,15 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="min-h-screen py-20 px-6 fade-in-section">
+    <section id="skills" className="min-h-screen golden-section px-6 fade-in-section">
       <div className="max-w-7xl mx-auto">
         <FadeIn variants={fadeInVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold golden-mb text-center">
             Technical <span className="gradient-text">Skills</span>
           </h2>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 golden-gap mb-16">
           {skillCategories.map((category, categoryIndex) => (
             <Stagger 
               key={categoryIndex}

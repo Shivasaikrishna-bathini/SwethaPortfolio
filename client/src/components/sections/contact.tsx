@@ -40,10 +40,10 @@ const socialLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-screen py-20 px-6 fade-in-section flex items-center">
+    <section id="contact" className="min-h-screen golden-section px-6 fade-in-section flex items-center">
       <div className="max-w-7xl mx-auto w-full">
         <FadeIn variants={fadeInVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold golden-mb text-center">
             Get In <span className="gradient-text">Touch</span>
           </h2>
         </FadeIn>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export default function ResumeDownload() {
   const handleOpenResume = () => {
     // TODO: UPDATE YOUR RESUME - Change the PDF filename below when you upload a new resume
-    window.open('/attached_assets/Swetha_ATS_1759862930875.pdf', '_blank');
+    window.open('/attached_assets/Swetha_ATS_1760453545923.pdf', '_blank');
   };
 
   return (

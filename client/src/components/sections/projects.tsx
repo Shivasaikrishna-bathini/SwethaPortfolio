@@ -93,6 +93,28 @@ const projects = [
       "Identified optimal forecasting techniques for different market conditions",
       "Currently refining models for production deployment"
     ]
+  },
+  {
+    id: 5,
+    title: "Custom Sanskrit Transformer",
+    period: "Jun 2025 – Aug 2025",
+    description: "Advanced NLP model trained on ancient Sanskrit Vedic texts with custom 25,000-token vocabulary. Optimized with NVIDIA GPUs, CUDA, cuDNN, and TensorRT for production deployment.",
+    tags: ["Transformers", "CUDA", "TensorRT", "NLP"],
+    icon: "📜",
+    metric: "46% Faster",
+    color: "secondary",
+    link: null, // TODO: Add GitHub repo or live demo link here
+    details: [
+      "Built and trained a Transformer-based NLP model on ancient Sanskrit Vedic texts with custom 25,000-token vocabulary",
+      "Optimized inference and training using NVIDIA GPUs, CUDA, cuDNN, and integrated TensorRT",
+      "Engineered kernel-level performance tuning, system profiling, and benchmarking for scalable deployment"
+    ],
+    techStack: ["PyTorch", "Transformers", "CUDA", "cuDNN", "TensorRT", "NVIDIA GPUs", "Python", "NLP"],
+    outcomes: [
+      "Reduced inference latency by 46% and boosted throughput by 39% over baseline",
+      "Delivered robust real-time serving pipeline with <75ms inference times",
+      "Achieved production-grade deployment with optimized matrix multiplications for efficient attention"
+    ]
   }
 ];
 
@@ -101,16 +123,16 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projects" className="min-h-screen py-20 px-6 fade-in-section">
+      <section id="projects" className="min-h-screen golden-section px-6 fade-in-section">
         <div className="max-w-7xl mx-auto">
           <FadeIn variants={fadeInVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold golden-mb text-center">
               Featured <span className="gradient-text">Projects</span>
             </h2>
           </FadeIn>
 
           <Stagger variants={staggerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 golden-gap">
               {projects.map((project) => (
                 <FadeIn 
                   key={project.id}
