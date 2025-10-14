@@ -48,10 +48,10 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="min-h-screen px-6 fade-in-section" style={{ paddingTop: 'var(--space-phi-4)', paddingBottom: 'var(--space-phi-4)' }}>
+    <section id="experience" className="min-h-screen px-6 fade-in-section py-[6.854rem]">
       <div className="max-w-7xl mx-auto">
         <FadeIn variants={fadeInVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <h2 className="text-4xl md:text-5xl font-bold golden-mb text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-[4.236rem] text-center">
             Experience & <span className="gradient-text">Education</span>
           </h2>
         </FadeIn>
