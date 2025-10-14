@@ -1,6 +1,12 @@
 # Overview
 
-This is a portfolio web application built with a modern full-stack architecture. The project showcases a GenAI Engineer's professional profile, including their projects, skills, experience, and contact information. It features a React-based frontend with a dark-themed, animated UI and an Express.js backend with PostgreSQL database support via Drizzle ORM.
+This is a portfolio web application built with a modern full-stack architecture. The project showcases a GenAI Engineer's professional profile, including their projects, skills, experience, and contact information. It features a React-based frontend with a dark-themed, animated UI, golden ratio-based spacing system, floating cogs background pattern, and an Express.js backend with PostgreSQL database support via Drizzle ORM.
+
+## Recent Updates (October 2025)
+- **Resume**: Updated to Swetha_ATS_1760453545923.pdf
+- **Projects**: Added 5th project card - Custom Sanskrit Transformer (NLP model with CUDA/TensorRT optimization)
+- **Design System**: Implemented golden ratio (φ ≈ 1.618) spacing system across all sections for visual harmony
+- **Background**: Added minimal floating cogs SVG animation pattern with slow rotation and low opacity
 
 # User Preferences
 
@@ -27,8 +33,12 @@ Preferred communication style: Simple, everyday language.
 **Design System**:
 - CSS custom properties for theming with dark mode support
 - Inter and JetBrains Mono fonts from Google Fonts
-- Consistent color palette with primary (purple), secondary (blue), and accent (cyan) colors
+- Consistent color palette with primary (orange #f97316), secondary (blue), and accent (cyan) colors
 - Component-based architecture with reusable UI primitives
+- **Golden Ratio Spacing System**: CSS variables based on φ (1.618) for harmonious layout
+  - `--space-phi-1` through `--space-phi-5` (1.618rem to 11.09rem)
+  - Utility classes: `.golden-section`, `.golden-gap`, `.golden-mb`
+- **Floating Cogs Background**: Minimal SVG pattern with slow rotating cogs (opacity 0.03)
 
 ## Backend Architecture
 
@@ -81,7 +91,7 @@ Preferred communication style: Simple, everyday language.
 **Path Aliases**:
 - `@/*` - Client source files
 - `@shared/*` - Shared types and schemas
-- `@assets/*` - Static assets
+- `@assets/*` - Static assets (includes resume PDFs served as static files via Express)
 
 # External Dependencies
 
