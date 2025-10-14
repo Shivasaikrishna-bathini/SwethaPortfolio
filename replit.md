@@ -39,13 +39,12 @@ Preferred communication style: Simple, everyday language.
   - Section padding: `py-[6.854rem]` (~110px) for harmonious vertical rhythm
   - Heading margins: `mb-[4.236rem]` (~68px) for h2, `mb-[2.618rem]` (~42px) for h1
   - Grid gaps: `golden-gap` class using `var(--space-phi-2)` (2.618rem)
-- **Floating Cogs Background**: Detailed mechanical gear pattern with 5 distinct designs
-  - Gear 1: 12-tooth classic gear with dual circles
-  - Gear 2: 16-tooth gear with 4 internal circles
-  - Gear 3: 6-spoke gear with 10 teeth
-  - Gear 4: Cross-shaped gear with rectangular arms
-  - Gear 5: Small 8-tooth simple gear
-  - 14 gears total, slow rotation (60s-110s), orange strokes at 15% container opacity
+- **Animated Gear Background**: Animated GIF background with mechanical gear mechanism
+  - Asset: "Idea Maker Sticker by Johnson County Library" animated GIF
+  - Full viewport coverage with background-size: cover
+  - Subtle blending: 8% opacity with screen blend mode
+  - Fixed positioning, z-index 0 (behind content)
+  - Non-interactive (pointer-events: none)
 
 ## Backend Architecture
 
