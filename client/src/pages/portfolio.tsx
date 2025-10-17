@@ -51,7 +51,7 @@ export default function Portfolio() {
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2025 Sai Sri Swetha Battu. Built with <span className="text-primary">❤</span> and <span className="text-secondary">AI</span>
+            © 2025 Sai Sri Swetha Battu. Built with <span className="text-primary">❤</span> and <span className="text-secondary">expertise</span>
           </p>
         </div>
       </footer>
