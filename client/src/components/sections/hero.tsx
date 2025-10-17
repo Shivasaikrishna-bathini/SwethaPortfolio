@@ -103,7 +103,7 @@ export default function Hero() {
             </a>
             {/* TODO: UPDATE YOUR LINKEDIN - Change the URL below to your LinkedIn profile */}
             <a 
-              href="https://linkedin.com/in/saisri-swetha-battu-889a0649" 
+              href="https://www.linkedin.com/in/sai-sri-swetha-battu/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors text-2xl"
